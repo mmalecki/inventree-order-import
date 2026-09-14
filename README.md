@@ -11,6 +11,23 @@ cp .env.example .env
 # edit and source .env according to your shell
 ```
 
+### Finding column numbers
+To quickly find column numbers to put into `.env`, run `xan h < <order>.csv`, for example:
+
+```sh
+$ xan h < 279456217.csv 
+0  Sales Order No:
+...
+6  Mouser No:
+7  Mfr. No:
+8  Desc.:
+9  Customer No
+10 Order Qty.
+...
+```
+
+In this case your `CSV_SKU_COLUMN=6`, and `CSV_Q_COLUMN=10`.
+
 ## Usage
 
 ### From XLS export
